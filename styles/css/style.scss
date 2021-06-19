@@ -68,6 +68,12 @@ a {
     margin-top: 1.7rem;
 }
 
+.title-words {
+    display: flex;
+    flex-direction: column;
+    margin-top: -1.7rem;
+}
+
 .big-card {
     width: 85%;
     margin-top: 4rem;
@@ -171,4 +177,65 @@ footer {
 
 .attribution a {
     color: white;
+}
+
+@media screen and (min-width: 376px) {
+    header {
+        width: 100%;
+        height: 640px;
+        background: top / contain no-repeat url("../../images/desktop/image-hero.jpg");
+    }
+
+    .nav {
+        margin: 3.5rem 7rem 0 7rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        height: 15rem;
+        margin: 2.5rem 34rem 0 7rem;
+        margin-top: 6rem;
+        border: 2px solid white;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid white;
+        text-transform: uppercase;
+        color: white;
+        font-size: 4rem;
+    }
+
+    .title-words {
+        display: block;
+        margin-top: 0.1rem;
+    }
+
+    .interactive {
+        margin-right: 20rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .image-card {
+        width: 32rem;
+        height: 20rem;
+        position: absolute;
+        z-index: 2;
+        margin-top: -20rem;
+        margin-left: 35rem;
+        background-color: white;
+        text-align: left;
+    }
+
+    h2 {
+        text-align: left;
+        font-size: 2.6rem;
+        margin-left: 5.2rem;
+        margin-top: 4rem;
+    }
+
+    .p-bold {
+        margin-left: 3.5rem;
+    }
 }

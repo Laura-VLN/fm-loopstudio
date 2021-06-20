@@ -187,7 +187,7 @@ footer {
     }
 
     .nav {
-        margin: 3.5rem 7rem 0 7rem;
+        margin: 3.5rem 8.7rem 0 8.7rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -195,7 +195,7 @@ footer {
 
     h1 {
         height: 15rem;
-        margin: 2.5rem 34rem 0 7rem;
+        margin: 2.5rem 34rem 0 8.7rem;
         margin-top: 6rem;
         border: 2px solid white;
         display: flex;
@@ -237,5 +237,27 @@ footer {
 
     .p-bold {
         margin-left: 3.5rem;
+    }
+
+    .creations-title {
+        margin-left: 8.7rem;
+    }
+
+    .all-cards {
+        margin: 0 7.5rem 0 7.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .four-cards {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
     }
 }

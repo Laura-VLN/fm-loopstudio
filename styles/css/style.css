@@ -233,7 +233,7 @@ footer {
     background: top/contain no-repeat url("../../images/desktop/image-hero.jpg");
   }
   .nav {
-    margin: 3.5rem 7rem 0 7rem;
+    margin: 3.5rem 8.7rem 0 8.7rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -246,7 +246,7 @@ footer {
   }
   h1 {
     height: 15rem;
-    margin: 2.5rem 34rem 0 7rem;
+    margin: 2.5rem 34rem 0 8.7rem;
     margin-top: 6rem;
     border: 2px solid white;
     display: -webkit-box;
@@ -288,6 +288,39 @@ footer {
   }
   .p-bold {
     margin-left: 3.5rem;
+  }
+  .creations-title {
+    margin-left: 8.7rem;
+  }
+  .all-cards {
+    margin: 0 7.5rem 0 7.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .four-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 /*# sourceMappingURL=style.css.map */

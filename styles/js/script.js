@@ -12,18 +12,8 @@ var desktopSources = [
     "images/desktop/image-fisheye.jpg"
 ];
 
-
-function displayVersion() {
-    if (width > 375) {
-        version = "desktop";
-    } else {
-        version = "mobile";
-    }
-}
-
 function displayWindowSize() {
     width = window.innerWidth;
-    displayVersion();
 };
 
 function displayImg() {

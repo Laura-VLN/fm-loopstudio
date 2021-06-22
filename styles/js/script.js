@@ -12,13 +12,23 @@ var desktopSources = [
     "images/desktop/image-fisheye.jpg"
 ];
 
+function buttonHoverState() {
+    document.getElementById("a-hover").style.color = "white";
+    document.getElementById("button-hover").style.backgroundColor = "black";
+}
+
+function buttonHoverRelease() {
+    document.getElementById("a-hover").style.color = "black";
+    document.getElementById("button-hover").style.backgroundColor = "white";
+}
+
 function displayWindowSize() {
     width = window.innerWidth;
 };
 
 function displayImg() {
     desktopSources.forEach(element => {
-        if (width < 375) {
+        if (width < 1440) {
             array = element.split("/");
             array[1] = "mobile";
             element = array.join("/");
@@ -26,10 +36,11 @@ function displayImg() {
         }
     });
     
-    if (width > 375) {
+    if (width > 1440) {
         for (let i = 1; i < 9; i++) {
             document.getElementById("card-"+i).src = desktopSources[i-1];
         }
+        document.getElementById("interactive").src = "images/desktop/image-interactive.jpg";
     } else {
         for (let i = 1; i < 9; i++) {
             document.getElementById("card-"+i).src = mobileSources[i-1];

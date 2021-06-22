@@ -1,13 +1,12 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 body {
-  width: 100%;
-  height: 640px;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 0.9rem;
 }
 
-.all {
+main {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,14 +19,40 @@ body {
           align-items: center;
 }
 
-.top-nav {
-  display: none;
+h1 {
+  margin: 10rem 1.3rem 0 1.3rem;
+  height: 13rem;
+  border: 0.2rem solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 0.2rem solid white;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin: 0 1.4rem 0 1.4rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
   width: 100%;
-  height: 640px;
-  background: top/contain no-repeat url("../../images/mobile/image-hero.jpg");
+  height: 40rem;
+  background-image: url("../../images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
 .nav {
@@ -47,32 +72,8 @@ header {
   width: 9rem;
 }
 
-h1 {
-  height: 13rem;
-  margin: 2.5rem 1.3rem 0 1.3rem;
-  margin-top: 9rem;
-  border: 2px solid white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: 2px solid white;
-  text-transform: uppercase;
-  color: white;
-  font-size: 2.5rem;
-}
-
-h2 {
-  text-transform: uppercase;
-  font-size: 2rem;
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
+.top-nav {
+  display: none;
 }
 
 .title {
@@ -80,7 +81,7 @@ a {
 }
 
 .title:first-child {
-  margin-top: 1.7rem;
+  margin-top: 1.6rem;
 }
 
 .title-words {
@@ -91,12 +92,12 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: -1.7rem;
+  margin-top: -1.5rem;
 }
 
 .big-card {
   width: 85%;
-  margin-top: 4rem;
+  margin-top: 5rem;
   text-align: center;
 }
 
@@ -104,17 +105,12 @@ a {
   margin-bottom: 3rem;
 }
 
-.p-contain {
-  margin: 0 1.8rem 0 1.8rem;
-}
-
 .p-bold {
+  margin: 1.3rem 1.4rem 4.5rem 1.4rem;
   font-family: 'Alata', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #8c8c8c;
-  margin-bottom: 4.5rem;
-  margin-top: 1.3rem;
-  line-height: 1.6rem;
+  line-height: 1.5rem;
 }
 
 .creations-title {
@@ -122,7 +118,7 @@ a {
 }
 
 .card-container {
-  margin: 0 1.3rem 1rem 1.3rem;
+  margin: 0 1.4rem 1rem 1.4rem;
 }
 
 .card-picture {
@@ -143,28 +139,30 @@ a {
   color: white;
   text-transform: uppercase;
   font-size: 1.5rem;
-  margin: 3.3rem 0 0 1.2rem;
+  margin: 3.2rem 0 0 1.2rem;
 }
 
-.see-all {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.see-all-desktop {
+  display: none;
 }
 
 button {
   width: 9rem;
   height: 2.2rem;
-  border: 1px solid black;
+  border: 0.1rem solid black;
   background-color: white;
-  font-family: 'Alata', sans-serif;
-  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.23rem;
   margin-top: 0.7rem;
+}
+
+button font {
+  family: 'Alata', sans-serif;
+  size: 0.9rem;
+}
+
+.see-all a {
+  color: black;
 }
 
 footer {
@@ -207,48 +205,43 @@ footer {
   margin-bottom: 1.5rem;
 }
 
+.social-footer {
+  margin-left: 1.6rem;
+}
+
 .social-icon {
-  margin: 0 0.6rem 1rem 0;
+  margin: 0 0.6rem 2rem 0;
 }
 
 .attribution {
-  width: 100%;
-  margin: 4rem 5rem 3rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.attribution a {
+.attribution p, a {
   color: white;
 }
 
-@media screen and (min-width: 376px) {
-  header {
-    width: 100%;
-    height: 640px;
-    background: top/contain no-repeat url("../../images/desktop/image-hero.jpg");
-  }
-  .nav {
-    margin: 3.5rem 8.7rem 0 8.7rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+.attribution a {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    max-width: 1440px;
   }
   h1 {
-    height: 15rem;
-    margin: 2.5rem 34rem 0 8.7rem;
-    margin-top: 6rem;
-    border: 2px solid white;
+    margin: 8rem 39rem 0 8.9rem;
+    height: 17.5rem;
+    border: 0.2rem solid white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -256,41 +249,102 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    border: 2px solid white;
+    border: 0.2rem solid white;
     text-transform: uppercase;
     color: white;
-    font-size: 4rem;
+    font-size: 4.4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  header {
+    background-image: url(../../images/desktop/image-hero.jpg);
+  }
+  .nav {
+    margin: 4rem 8.9rem 0 8.9rem;
+  }
+  .logo-nav {
+    width: 10rem;
+  }
+  .burger-nav {
+    display: none;
+  }
+  .top-nav {
+    width: 25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-weight: 700;
+  }
+  .title {
+    margin-left: 3.5rem;
+  }
+  .title:first-child {
+    margin-top: 2.5rem;
+  }
+  .title:last-child {
+    margin: 2.5rem 0 0 1.3rem;
   }
   .title-words {
-    display: block;
-    margin-top: 0.1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: -2rem;
+  }
+  .big-card {
+    margin-top: 9rem;
   }
   .interactive {
-    margin-right: 20rem;
     position: relative;
     z-index: 1;
+    margin-right: 25.5rem;
   }
   .image-card {
-    width: 32rem;
-    height: 20rem;
+    width: 36rem;
+    height: 19.75rem;
     position: absolute;
     z-index: 2;
-    margin-top: -20rem;
-    margin-left: 35rem;
+    margin: -23rem 0 0 37.5rem;
     background-color: white;
     text-align: left;
   }
-  h2 {
+  .image-card h2 {
     text-align: left;
-    font-size: 2.6rem;
-    margin-left: 5.2rem;
-    margin-top: 4rem;
+    margin: 6rem 0 0 6rem;
   }
   .p-bold {
-    margin-left: 3.5rem;
+    font-size: 0.96rem;
+    margin-left: 6rem;
+  }
+  .title-button {
+    width: 74rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 7.5rem;
   }
   .creations-title {
-    margin-left: 8.7rem;
+    margin-top: 0.6rem;
+  }
+  .see-all {
+    display: none;
+  }
+  .see-all-desktop {
+    display: block;
+    margin-right: 1.5rem;
+  }
+  .see-all-desktop a {
+    color: black;
   }
   .all-cards {
     margin: 0 7.5rem 0 7.5rem;
@@ -313,6 +367,14 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
+  .card-title {
+    font-size: 2rem;
+    margin: 21.5rem 0 0 2.5rem;
+  }
+  .card-picture:hover {
+    opacity: 0.5;
+    color: black;
+  }
   .footer-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -321,6 +383,31 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 2rem;
+  }
+  .first-bloc {
+    margin-left: 9rem;
+  }
+  .second-bloc {
+    margin-right: 9rem;
+    margin-top: 2rem;
+  }
+  .social-icon {
+    margin: 0 0.6rem 2rem 0;
+  }
+  .footer-nav a {
+    margin-right: 2rem;
+    font-weight: 700;
+    font-size: 0.9rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

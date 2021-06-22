@@ -10,19 +10,18 @@
 </head>
 
 <body>
-  <div class="all">
+  <main>
     <header>
       <div class="nav">
         <img class="logo-nav" src="images/logo.svg" alt="Logo of Loopstudios.">
-        <img src="images/icon-hamburger.svg" alt="Navigation icon.">
-      </div>
-      <!-- display none -->
-      <div class="top-nav"> 
-        <a href="#">About</a>
-        <a href="#">Careers</a>
-        <a href="#">Events</a>
-        <a href="#">Products</a>
-        <a href="#">Support</a>
+        <a href="#"><img class="burger-nav" src="images/icon-hamburger.svg" alt="Navigation icon."></a>
+        <div class="top-nav"> 
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Events</a>
+          <a href="#">Products</a>
+          <a href="#">Support</a>
+        </div>
       </div>
       <h1>
         <span class="title">Immersive</span>
@@ -35,7 +34,7 @@
     </header>
 
     <section class="big-card">
-      <img class="interactive" src="images/mobile/image-interactive.jpg" alt="Guy playing with VR.">
+      <img class="interactive" id="interactive" src="images/mobile/image-interactive.jpg" alt="Guy playing with VR.">
       <div class="image-card">
         <h2>The leader in interactive VR</h2>
         <div class="p-contain">
@@ -50,7 +49,12 @@
     </section>
 
     <section class="cards">
-      <h2 class="creations-title">Our creations</h2>
+      <div class="title-button">
+        <h2 class="creations-title">Our creations</h2>
+        <div class="see-all-desktop">
+          <button id="button-hover" onmouseover="buttonHoverState()" onmouseout="buttonHoverRelease()"><a id="a-hover" href="">See all</a></button>
+        </div>
+      </div>
       <div class="all-cards">
         <div class="four-cards">
           <div class="card-container">
@@ -116,35 +120,37 @@
     </section>
 
     <div class="see-all">
-      <button>See all</button>
+      <button><a href="">See all</a></button>
     </div>
 
     <footer>
-      <div class="logo-footer">
-        <img src="images/logo.svg" alt="Logo of Loopstudios.">
-      </div>
-      <div class="footer-nav">
-        <a href="#">About</a>
-        <a href="#">Careers</a>
-        <a href="#">Events</a>
-        <a href="#">Products</a>
-        <a href="#">Support</a>
-      </div>
-
-      <p class="rights">© 2021 Loopstudios. All rights reserved.</p>
-
-      <div class="social-footer">
-        <a href="#"><img class="social-icon" src="images/icon-facebook.svg" alt="Link to Facebook."></a>
-        <a href="#"><img class="social-icon" src="images/icon-twitter.svg" alt="Link to Twitter."></a>
-        <a href="#"><img class="social-icon" src="images/icon-pinterest.svg" alt="Link to Pinterest."></a>
-        <a href="#"><img class="social-icon" src="images/icon-instagram.svg" alt="Link to Instagram."></a>
+      <div class="first-bloc">
+        <div class="logo-footer">
+          <img src="images/logo.svg" alt="Logo of Loopstudios.">
+        </div>
+        <div class="footer-nav">
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Events</a>
+          <a href="#">Products</a>
+          <a href="#">Support</a>
+        </div>
       </div>
 
-      <div class="attribution">
-        <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span>
-        <span>Coded by <a href="#" target="_blank">Laura-VLN</a>.</span>
+      <div class="second-bloc">
+        <div class="social-footer">
+          <a href="#"><img class="social-icon" src="images/icon-facebook.svg" alt="Link to Facebook."></a>
+          <a href="#"><img class="social-icon" src="images/icon-twitter.svg" alt="Link to Twitter."></a>
+          <a href="#"><img class="social-icon" src="images/icon-pinterest.svg" alt="Link to Pinterest."></a>
+          <a href="#"><img class="social-icon" src="images/icon-instagram.svg" alt="Link to Instagram."></a>
+        </div>
+
+        <div class="attribution">
+          <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+          <p>Coded by <a href="#" target="_blank">Laura-VLN</a>.</p>
+        </div>
       </div>
     </footer>
-  </div>
+  </main>
 </body>
 </html>
